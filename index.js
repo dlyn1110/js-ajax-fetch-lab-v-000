@@ -28,7 +28,7 @@ function createIssue() {
     title: document.getElementById('title').value,
     body: document.getElementById('body').value
   }
-  // const username = ''
+  
 
   fetch(`${rootURL}/repos/${username}/js-ajax-fetch-lab/issues`, {
     method: 'POST',
@@ -42,7 +42,6 @@ function createIssue() {
 }
 
 function getIssues() {
-  // const username = ''
   fetch(`${rootURL}/repos/${username}/js-ajax-fetch-lab/issues`, {
     headers: {
       Authorization: `token ${getToken()}`
