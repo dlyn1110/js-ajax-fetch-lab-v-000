@@ -28,7 +28,6 @@ function createIssue() {
     title: document.getElementById('title').value,
     body: document.getElementById('body').value
   }
-  
 
   fetch(`${rootURL}/repos/${username}/js-ajax-fetch-lab/issues`, {
     method: 'POST',
