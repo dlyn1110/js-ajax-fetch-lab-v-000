@@ -1,5 +1,5 @@
 const rootURL = 'https://api.github.com';
-const userame = ''
+const username = ''
 
 function getToken() {
   return '';
