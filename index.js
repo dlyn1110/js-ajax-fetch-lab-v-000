@@ -54,7 +54,7 @@ function createIssue() {
     title: document.getElementById('title').value,
     body: document.getElementById('body').value
   }
-  const username = 'dlyn'
+  const username = ''
 
   fetch(`${baseURL}/repos/${username}/js-ajax-fetch-lab/issues`, {
     method: 'POST',
