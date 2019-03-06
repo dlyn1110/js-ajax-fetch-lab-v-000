@@ -68,7 +68,7 @@ function createIssue() {
 }
 
 function getIssues() {
-  const username = 'savi'
+  const username = ''
   fetch(`${baseURL}/repos/${username}/js-ajax-fetch-lab/issues`, {
     headers: {
       Authorization: `token ${getToken()}`
