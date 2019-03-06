@@ -1,4 +1,4 @@
-const baseURL = 'https://api.github.com';
+const rootURL = 'https://api.github.com';
 
 
 function getToken() {
