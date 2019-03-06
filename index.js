@@ -8,7 +8,7 @@ function getToken() {
 function forkRepo() {
   debugger
   const repo = 'learn-co-curriculum/js-ajax-fetch-lab';
-  const url = `${baseURL}/repos/${repo}/forks`;
+  const url = `${rootURL}/repos/${repo}/forks`;
   fetch(url, {
     method: 'POST',
     headers: {
@@ -30,7 +30,7 @@ function createIssue() {
   }
   const username = ''
 
-  fetch(`${baseURL}/repos/${username}/js-ajax-fetch-lab/issues`, {
+  fetch(`${rootURL}/repos/${username}/js-ajax-fetch-lab/issues`, {
     method: 'POST',
     body: JSON.stringify(postIssue),
     headers: {
@@ -43,7 +43,7 @@ function createIssue() {
 
 function getIssues() {
   const username = ''
-  fetch(`${baseURL}/repos/${username}/js-ajax-fetch-lab/issues`, {
+  fetch(`${rootURL}/repos/${username}/js-ajax-fetch-lab/issues`, {
     headers: {
       Authorization: `token ${getToken()}`
     }
